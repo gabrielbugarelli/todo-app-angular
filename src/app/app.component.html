@@ -4,6 +4,6 @@
   <li> {{ task.id }}. {{ task.title }} -
     <button *ngIf="!task.done" >CONCLUIR</button>
     <button *ngIf="task.done" >REFAZER</button>
-    | <button>REMOVER</button>
+    | <button (click)="remove(task)">REMOVER</button>
   </li>
 </ul>
