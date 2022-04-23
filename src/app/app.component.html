@@ -2,8 +2,8 @@
 
 <ul *ngFor="let task of todos">
   <li> {{ task.id }}. {{ task.title }} -
-    <button *ngIf="!task.done" >CONCLUIR</button>
-    <button *ngIf="task.done" >REFAZER</button>
+    <button *ngIf="!task.done" (click)="markAsDone(task)">CONCLUIR</button>
+    <button *ngIf="task.done" (click)="markAsUndone(task)">REFAZER</button>
     | <button (click)="remove(task)">REMOVER</button>
   </li>
 </ul>
