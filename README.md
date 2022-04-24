@@ -1,27 +1,26 @@
-# TodoAppAngular
+# LISTA DE TAREFAS EM ANGULAR
+#### Olá, seja bem vindo, este projeto é uma lista de tarefas simples, desenvolvido em Angular 2 para compreender os conceitos do Framework mais a fundo.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+#### Tecnologias utilizadas:
+ - Nodejs 16 LTS
+ - Angular 13
 
-## Development server
+###### Para executar este projeto, basta executar o comando no seu terminal:
+```
+	git clone https://github.com/gabrielbugarelli/todo-app-angular.git
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+###### Acessando o diretório do projeto através do terminal execute:
+```
+	npm install
+```
 
-## Code scaffolding
+###### Você poderá levantar o projeto em localhost com o comando:
+```
+	npm start
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+###### ou, caso tenha a CLI do Angular instalado no computador, execute com o comando *ng start*
+```
+	ng start ou ng s
+```
