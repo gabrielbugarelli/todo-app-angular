@@ -7,20 +7,20 @@
 
 ###### Para executar este projeto, basta executar o comando no seu terminal:
 ```
-	git clone https://github.com/gabrielbugarelli/todo-app-angular.git
+git clone https://github.com/gabrielbugarelli/todo-app-angular.git
 ```
 
 ###### Acessando o diretório do projeto através do terminal execute:
 ```
-	npm install
+npm install
 ```
 
 ###### Você poderá levantar o projeto em localhost com o comando:
 ```
-	npm start
+npm start
 ```
 
 ###### ou, caso tenha a CLI do Angular instalado no computador, execute com o comando *ng start*
 ```
-	ng start ou ng s
+ng start ou ng s
 ```
