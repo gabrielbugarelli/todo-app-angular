@@ -26,6 +26,14 @@ export class AppComponent {
     this.todos.push(new Todo(3, "Concluir o primeiro módulo do curso de Angular", false));
   }
 
+  add() {
+    const title = this.form.controls['title'].value;
+    const id = this.todos.length + Math.random();
+    this.todos.push(new Todo(id, title, false));
+
+    this.form.reset();
+  }
+
   remove(todo: Todo) {
     const index = this.todos.indexOf(todo);
 
