@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
+
+  margin: auto;
+
+  background: rgb(57,101,255);
+  background: linear-gradient(139deg, rgba(57,101,255,1) 0%, rgba(67,10,164,1) 43%, rgba(198,0,173,1) 100%);
+}
+
