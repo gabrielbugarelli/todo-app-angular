@@ -21,17 +21,26 @@ export class AppComponent {
       ])]
     });
 
-    this.todos.push(new Todo(1, "Passear com o Perseu", false));
-    this.todos.push(new Todo(2, "Estudar uma hora de Angular 2 com Typescript", false));
-    this.todos.push(new Todo(3, "Concluir o primeiro módulo do curso de Angular", false));
+    this.load();
   }
 
   add() {
     const title = this.form.controls['title'].value;
     const id = this.todos.length + Math.random();
     this.todos.push(new Todo(id, title, false));
+    this.save();
 
     this.form.reset();
+  }
+
+  save() {
+    const data = JSON.stringify(this.todos);
+    localStorage.setItem("todos", data);
+  }
+
+  load() {
+    const data = localStorage.getItem("todos");
+    this.todos = JSON.parse(data!);
   }
 
   remove(todo: Todo) {
@@ -40,13 +49,19 @@ export class AppComponent {
     if(index !== -1) {
       this.todos.splice(index, 1);
     }
+
+    this.save();
   }
 
   markAsDone(todo: Todo) {
     todo.done = true;
+
+    this.save();
   }
 
   markAsUndone(todo: Todo) {
     todo.done = false;
+
+    this.save();
   }
 }
